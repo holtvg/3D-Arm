@@ -36,12 +36,12 @@ C:\Users\Vincent\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplic
 C:\Users\Vincent\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\Vincent\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\Vincent\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\Resources\base4.obj
+C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\Resources\elbow3.obj
+C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\Resources\Newarmhand2.obj
+C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\Resources\shoulder3.obj
+C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\Resources\shoulder5.obj
 C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\WpfApplication3.exe.config
-C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\WpfApplication3.csprojResolveAssemblyReference.cache
-C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\MainWindow.g.cs
-C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\App.g.cs
-C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.cache
-C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.lref
 C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\WpfApplication3.exe
 C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\WpfApplication3.pdb
 C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\HelixToolkit.dll
@@ -50,17 +50,17 @@ C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\HelixToolkit.pdb
 C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\HelixToolkit.xml
 C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\HelixToolkit.Wpf.pdb
 C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\HelixToolkit.Wpf.xml
+C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\WpfApplication3.csprojResolveAssemblyReference.cache
+C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\3DArm.g.cs
+C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\MainWindow.g.cs
+C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\App.g.cs
+C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.cache
+C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.lref
+C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\3DArm.baml
 C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\MainWindow.baml
 C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\WpfApplication3.g.resources
 C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\WpfApplication3.Properties.Resources.resources
 C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\WpfApplication3.csproj.GenerateResource.Cache
 C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\WpfApplication3.exe
 C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\WpfApplication3.pdb
-C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\Resources\base4.obj
-C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\Resources\elbow3.obj
-C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\Resources\shoulder3.obj
-C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\Resources\shoulder5.obj
-C:\RoboUtes\3D-Arm\WpfApplication3\bin\Debug\Resources\Newarmhand2.obj
-C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\3DArm.g.cs
-C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\RoboUtes\3D-Arm\WpfApplication3\obj\Debug\3DArm.baml
