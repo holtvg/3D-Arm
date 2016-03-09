@@ -1795,6 +1795,11 @@
             The adorner layer name.
             </summary>
         </member>
+        <member name="F:HelixToolkit.Wpf.HelixViewport3D.PartViewportGrid">
+            <summary>
+            The viewport grid name.
+            </summary>
+        </member>
         <member name="F:HelixToolkit.Wpf.HelixViewport3D.PartCameraController">
             <summary>
             The camera controller name.
