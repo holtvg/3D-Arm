@@ -11,10 +11,10 @@
     <Grid Name="overall_grid">
        
 
-        <Slider Value="{Binding shoulder_angle}" Maximum="180" Minimum="-180" Height="29" VerticalAlignment="Top" />
-        <Slider Value="{Binding a}" Maximum="90" Minimum="-90" Height="29" VerticalAlignment="Top" Margin="0,30,0,0" />
-        <Slider Value="{Binding elbow_angle2}" Maximum="5" Minimum="-5" Height="29" VerticalAlignment="Top" Margin="0,60,0,0"/>
-        <Slider Value="{Binding b}" Maximum="90" Minimum="-90" Height="29" VerticalAlignment="Top" Margin="0,90,0,0" />
+        <Slider Value="{Binding turntable_angle}" Maximum="180" Minimum="-180" Height="29" VerticalAlignment="Top" />
+        <Slider Value="{Binding shoulder_angle}" Maximum="90" Minimum="-90" Height="29" VerticalAlignment="Top" Margin="0,30,0,0" />
+        <Slider Value="{Binding elbow_angle}" Maximum="90" Minimum="-90" Height="29" VerticalAlignment="Top" Margin="0,60,0,0"/>
+        <Slider Value="{Binding wrist_angle}" Maximum="90" Minimum="-90" Height="29" VerticalAlignment="Top" Margin="0,90,0,0" />
         
         <Grid Name="boxcontrol" Height="81" VerticalAlignment="Top" Margin="0,124,0,0">
             <xctk:DecimalUpDown Value="{Binding boxheigth}" Margin="10,8,0,0" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="84" />
@@ -25,12 +25,14 @@
             <xctk:DecimalUpDown Value="{Binding boxY}" Margin="99,44,0,0" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="84" />
             <xctk:DecimalUpDown Value="{Binding boxZ}" Margin="188,44,0,0" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="84" />
         </Grid>
-        
+        <!-- The HelixViewport3D supports camera manipulation, and can be used just like the Viewport3D -->
         <HelixToolkit:HelixViewport3D ZoomExtentsWhenLoaded="True" Margin="0,124,0,0" Name="m_helix_viewport">
- 
+
+            <!-- Remember to add light to the scene -->
             <HelixToolkit:SunLight/>
 
-            <ModelVisual3D Content="{Binding model}"/>
+            <!-- The content of this visual is defined in MainViewModel.cs -->
+            <ModelVisual3D Content="{Binding our_Model}"/>
             <ModelVisual3D x:Name="foo"/>
         </HelixToolkit:HelixViewport3D>
     </Grid>
