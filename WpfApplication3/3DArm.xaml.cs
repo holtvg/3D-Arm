@@ -3,6 +3,7 @@ using System;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Media3D;
+using UnityEngine;
 
 namespace WpfApplication3
 {
@@ -84,7 +85,7 @@ namespace WpfApplication3
             arm.Children.Add(shoulder);
             arm.Children.Add(elbow);
 
-            // displahy model
+            // display model
             foo.Content = arm;
 
             //creates a small cube for determining 3d coordinates
@@ -93,9 +94,11 @@ namespace WpfApplication3
             mybox.Width = 1;
             mybox.Length = 1;
 
-            mybox.Center = new Point3D(0, 0, 0);
+            // mybox.Center = new Point3D(0, 0, 0);
+           // mybox.Center = new Point3D(0, 19, 5);
+            mybox.Center = new Point3D(0, 0, 20);
 
-            m_helix_viewport.Children.Add(mybox);
+           // m_helix_viewport.Children.Add(mybox);
             arm.Transform = new RotateTransform3D(new AxisAngleRotation3D(new Vector3D(1, 0, 0), 90));
 
             DataContext = this;
@@ -108,6 +111,10 @@ namespace WpfApplication3
             turntable.Transform = new RotateTransform3D(new AxisAngleRotation3D(new Vector3D(0, 1, 0), angle));
 
             moveShoulder(ElbowAngle);
+
+            Console.WriteLine("turntable:" + angle);
+
+            angle2 = angle;
         }
 
 
@@ -118,16 +125,43 @@ namespace WpfApplication3
 
             Group_3D.Children.Add(turntable.Transform);
 
-            //create new transformation
-            RotateTransform3D shoulder_transform = new RotateTransform3D(new AxisAngleRotation3D(new Vector3D(1, 0, 0), angle));
+            Point3D origin = Group_3D.Transform(new Point3D(0, 9, 1));
+
+
+            double angle2_rad = Math.PI / 180 * angle2;
+
+
+            double x;
+            double y;
+            double z;
+
+            if (angle2 >= 0)
+            {
+                x = Math.Cos(-angle2_rad);
+                y = 0;
+                z= Math.Sin(-angle2_rad);
+            }
+            else
+            {
+                x = Math.Cos(-angle2_rad);
+                y = 0;
+                z = Math.Sin(-angle2_rad);
+            }
+
+
+            RotateTransform3D shoulder_transform = new RotateTransform3D(new AxisAngleRotation3D(new Vector3D(x, y, z), angle));
+
+
             Console.WriteLine("shoulder:" + angle);
 
-            shoulder_transform.CenterX = 0;
-            shoulder_transform.CenterY = 0;
-            shoulder_transform.CenterZ = 0;
+
+            shoulder_transform.CenterX = origin.X;
+            shoulder_transform.CenterY = origin.Y;
+            shoulder_transform.CenterZ = origin.Z;
 
             //add it to the transformation group, turntable transform will be applied to shoulder as well
             Group_3D.Children.Add(shoulder_transform);
+
 
             shoulder.Transform = Group_3D;
 
@@ -140,9 +174,30 @@ namespace WpfApplication3
             Group_3D.Children.Add(shoulder.Transform);
 
             Point3D origin = Group_3D.Transform(new Point3D(0, 19, 5));
+           // Point3D origin = Group_3D.Transform(new Point3D(0, 0, 0));
+
             Console.WriteLine("elbow:" + angle);
 
-            RotateTransform3D elbow_transform = new RotateTransform3D(new AxisAngleRotation3D(new Vector3D(Math.Cos(angle2), 0, Math.Sin(angle2)), angle)); //same issue here with pivoting
+            double angle2_rad = Math.PI / 180 * angle2;
+
+            double x;
+            double y;
+            double z;
+
+            if (angle2 >= 0)
+            {
+                x = Math.Cos(-angle2_rad);
+                y = 0;
+                z = Math.Sin(-angle2_rad);
+            }
+            else
+            {
+                x = Math.Cos(-angle2_rad);
+                y = 0;
+                z = Math.Sin(-angle2_rad);
+            }
+
+            RotateTransform3D elbow_transform = new RotateTransform3D(new AxisAngleRotation3D(new Vector3D(x, y, z), angle));
 
             Console.WriteLine(angle2);
             Console.WriteLine(Math.Cos(angle2));
